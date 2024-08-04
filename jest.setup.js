@@ -1,4 +1,4 @@
-import { AuthenticationManager } from "./authentication-manager.js";
+import { AuthenticationManager } from "./creational-patterns/singleton-pattern/authentication-manager.js";
 
 const auth = new AuthenticationManager();
 (async function() {
