@@ -5,15 +5,15 @@ config();
 export class AuthenticationManager {
     #token;
     #apiUrl;
+    static #calledFromInside = false;
 
     static instance;
 
     constructor() {
-        if (TokenManager.instance) {
-            throw new Error("TokenManager is a singleton");
+        if (!AuthenticationManager.#calledFromInside) {
+            throw new Error("AuthenticationManager is a singleton. Use AuthenticationManager.getInstance()");
         }
         this.#apiUrl = process.env.API_URL;
-        TokenManager.instance = this;
     }
 
     async validateKey() {
@@ -96,5 +96,15 @@ export class AuthenticationManager {
         };
 
         await fetch(url, options);
+    }
+
+    static getInstance() {
+        AuthenticationManager.#calledFromInside = true;
+        if (!AuthenticationManager.instance) {
+            AuthenticationManager.instance = new AuthenticationManager();
+        }
+        AuthenticationManager.#calledFromInside = false;
+
+        return AuthenticationManager.instance;
     }
 }

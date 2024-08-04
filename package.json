@@ -6,7 +6,7 @@
   "type":"module",
   "scripts": {
     "loadTestData:builder": "node creational-patterns/builder-pattern/connect-to-database.js",
-    "test:builder": "npm run loadTestData:builder && node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    "test:builder": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "author": "",
   "license": "ISC",

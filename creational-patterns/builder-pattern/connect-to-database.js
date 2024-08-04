@@ -75,4 +75,4 @@ async function listCollections() {
 }
 }
 
-listCollections().catch(console.error);
+await listCollections().catch(console.error);
