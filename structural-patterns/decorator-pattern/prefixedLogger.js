@@ -1,3 +1,5 @@
+// decorator pattern
+
 export class PrefixedLogger {
     constructor(baseLogger, pattern) {
         this.baseLogger = baseLogger;
