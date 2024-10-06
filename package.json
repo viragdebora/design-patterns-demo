@@ -1,19 +1,19 @@
 {
   "name": "design-patterns-demo",
   "version": "1.0.0",
-  "description": "",
-  "main": "",
+  "description": "This project is about to demo six different design pattern basic real life usage.",
   "type": "module",
   "scripts": {
-    "loadTestData:builder": "node creational-patterns/builder-pattern/connect-to-database.js",
-    "test:builder": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    "iteratorPattern": "node ./behavioral-patterns/iterator-pattern/iterator-test.js",
+    "strategyPattern": "node ./behavioral-patterns/strategy-pattern/payment-test.js",
+    "builderPattern": "node ./creational-patterns/builder-pattern/user-profile-usage.js",
+    "singletonPattern": "node logger-test.js",
+    "decoratorPattern": "node logger-test.js",
+    "facadePattern": "node ./structural-patterns/facade-pattern/home-automation-test.js"
   },
-  "author": "",
+  "author": "Debora Virag",
   "license": "ISC",
   "dependencies": {
-    "chalk": "5.3.0",
-    "dotenv": "16.4.5",
-    "jest": "29.7.0",
-    "mongodb": "6.8.0"
+    "chalk": "5.3.0"
   }
 }
