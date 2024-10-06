@@ -4,10 +4,10 @@
   "description": "This project is about to demo six different design pattern basic real life usage.",
   "type": "module",
   "scripts": {
+    "singletonPattern": "node logger-test.js",
+    "builderPattern": "node ./creational-patterns/builder-pattern/user-profile-usage.js",
     "iteratorPattern": "node ./behavioral-patterns/iterator-pattern/iterator-test.js",
     "strategyPattern": "node ./behavioral-patterns/strategy-pattern/payment-test.js",
-    "builderPattern": "node ./creational-patterns/builder-pattern/user-profile-usage.js",
-    "singletonPattern": "node logger-test.js",
     "decoratorPattern": "node logger-test.js",
     "facadePattern": "node ./structural-patterns/facade-pattern/home-automation-test.js"
   },
