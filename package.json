@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "singletonPattern": "node logger-test.js",
-    "builderPattern": "node ./creational-patterns/builder-pattern/user-profile-usage.js",
+    "builderPattern": "node ./creational-patterns/builder-pattern/user-profile-test.js",
     "iteratorPattern": "node ./behavioral-patterns/iterator-pattern/iterator-test.js",
     "strategyPattern": "node ./behavioral-patterns/strategy-pattern/payment-test.js",
     "decoratorPattern": "node logger-test.js",
